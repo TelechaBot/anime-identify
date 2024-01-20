@@ -1,0 +1,28 @@
+[project]
+name = "anime-identify"
+version = "0.1.0"
+description = "Identify whether an image is an anime image"
+authors = [
+    { name = "sudoskys", email = "coldlando@hotmail.com" },
+]
+dependencies = [
+    "opencv-python>=4.8.1.78",
+    "onnxruntime>=1.16.3",
+    "numpy>=1.24.4",
+    "robust-downloader>=0.0.2",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.optional-dependencies]
+testing = [
+    "pytest>=7.4.4",
+]
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+package-type = "library"
