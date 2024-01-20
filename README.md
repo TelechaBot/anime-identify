@@ -2,6 +2,11 @@
 
 Toolkit for Distinguishing Anime Images from Real Images With Lightweight Dependency.
 
+[![PyPI](https://img.shields.io/pypi/v/anime-identify.svg)](https://pypi.org/project/anime-identify/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/anime-identify.svg)](https://pypi.org/project/anime-identify/)
+
+## Usage
+
 ```shell
 pip install anime-identify
 ```
