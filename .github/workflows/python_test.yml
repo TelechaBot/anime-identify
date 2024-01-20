@@ -3,11 +3,8 @@ name: Run tests
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
-      - dev
-      - develop
-      - '**-develop'
+    tags:
+      - pypi*
 
 jobs:
   Testing:
