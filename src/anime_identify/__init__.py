@@ -66,6 +66,7 @@ class AnimeIDF:
         :param content: PATH or IO
         :return:
         """
+        content.seek(0)
         img = self._read_image(content=content)
         img = cv2.resize(img, (224, 224))
         img = img.astype(np.float32) / 255.0
