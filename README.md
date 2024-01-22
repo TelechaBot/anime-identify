@@ -17,7 +17,7 @@ from anime_identify import AnimeIDF
 
 def test_anime():
     with open("anime.jpg", "rb") as f:
-        f.seek(0)
+        f.seek(0)  # IMPORTANT!!!
         poss = (AnimeIDF().predict_image(content=f))
     print(poss)
     assert poss > 50, f"anime poss: {poss}"
